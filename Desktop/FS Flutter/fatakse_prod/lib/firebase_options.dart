@@ -41,7 +41,7 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: "AIzaSyCE2_LOjoEyWWYukFzU_E2eNKK7LTv2EYs",
+    apiKey: "YOUR_API_KEY_HERE",
     authDomain: "fatakse-flutter-mvp.firebaseapp.com",
     projectId: "fatakse-flutter-mvp",
     storageBucket: "fatakse-flutter-mvp.firebasestorage.app",
@@ -51,7 +51,7 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: "AIzaSyA7447jsNyIJH0yhRU6P5R1IREfOgedL4s",
+    apiKey: "YOUR_API_KEY_HERE",
     appId: "1:534945286343:android:6ff9a2075a85ab69abd6e2",
     messagingSenderId: "534945286343",
     projectId: "fatakse-flutter-mvp",
@@ -59,7 +59,7 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: "AIzaSyCE2_LOjoEyWWYukFzU_E2eNKK7LTv2EYs",
+    apiKey: "YOUR_API_KEY_HERE",
     appId: "1:534945286343:ios:6ff9a2075a85ab69abd6e2",
     messagingSenderId: "534945286343",
     projectId: "fatakse-flutter-mvp",
@@ -68,7 +68,7 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: "AIzaSyCE2_LOjoEyWWYukFzU_E2eNKK7LTv2EYs",
+    apiKey: "YOUR_API_KEY_HERE",
     authDomain: "fatakse-flutter-mvp.firebaseapp.com",
     projectId: "fatakse-flutter-mvp",
     storageBucket: "fatakse-flutter-mvp.firebasestorage.app",
@@ -78,7 +78,7 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: "AIzaSyCE2_LOjoEyWWYukFzU_E2eNKK7LTv2EYs",
+    apiKey: "YOUR_API_KEY_HERE",
     authDomain: "fatakse-flutter-mvp.firebaseapp.com",
     projectId: "fatakse-flutter-mvp",
     storageBucket: "fatakse-flutter-mvp.firebasestorage.app",
