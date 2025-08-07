@@ -76,30 +76,7 @@ class Fatakse extends StatelessWidget {
             },
           ),
         );
-        // On web, constrain to mobile size and center
-        if (kIsWeb) {
-          app = Center(
-            child: Container(
-              width: 390, // iPhone 14 Pro width
-              height: 844, // iPhone 14 Pro height
-              decoration: BoxDecoration(
-                color: Colors.black,
-                borderRadius: BorderRadius.circular(24),
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.black26,
-                    blurRadius: 24,
-                    offset: Offset(0, 8),
-                  ),
-                ],
-              ),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(24),
-                child: app,
-              ),
-            ),
-          );
-        }
+        
         return app;
       },
     );

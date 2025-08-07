@@ -8,47 +8,6 @@ import '../../auth/presentation/pages/signin_page.dart';
 import '../../auth/presentation/pages/role_selection_page.dart';
 
 class GetStartedPage extends StatelessWidget {
-  Widget _buildFeatureCard({
-    required BuildContext context,
-    required IconData icon,
-    required Color iconColor,
-    required String title,
-    required String description,
-  }) {
-    return Container(
-      margin: EdgeInsets.symmetric(horizontal: 24.w, vertical: 4.h),
-      padding: EdgeInsets.all(10.w),
-      decoration: BoxDecoration(
-        color: AppTheme.surfaceVariant,
-        borderRadius: BorderRadius.circular(10.r),
-      ),
-      child: Row(
-        children: [
-          Container(
-            width: 32.w,
-            height: 32.w,
-            decoration: BoxDecoration(
-              color: iconColor.withAlpha((0.2 * 255).toInt()),
-              borderRadius: BorderRadius.circular(8.r),
-            ),
-            child: Icon(icon, color: iconColor, size: 20.w),
-          ),
-          SizedBox(width: 12.w),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(title, style: AppTextStyles.title),
-                SizedBox(height: 2.h),
-                Text(description, style: AppTextStyles.caption),
-              ],
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-
   const GetStartedPage({super.key});
 
   @override
@@ -82,33 +41,6 @@ class GetStartedPage extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               SizedBox(height: 16.h),
-              _buildFeatureCard(
-                context: context,
-                icon: Icons.people_outline,
-                iconColor: AppTheme.primaryColor,
-                title: 'Connect Artists & Clients',
-                description:
-                    'Find the perfect artist for your event or get booked for gigs',
-              ),
-              SizedBox(height: 10.h),
-              _buildFeatureCard(
-                context: context,
-                icon: Icons.inventory_outlined,
-                iconColor: AppTheme.primaryColor,
-                title: 'Equipment Rental',
-                description:
-                    'Rent or provide equipment for events and productions',
-              ),
-              SizedBox(height: 10.h),
-              _buildFeatureCard(
-                context: context,
-                icon: Icons.event_note_outlined,
-                iconColor: AppTheme.primaryColor,
-                title: 'Event Planning',
-                description:
-                    'Manage events, bookings, and collaborate with teams',
-              ),
-              SizedBox(height: 18.h),
               Container(
                 width: double.infinity,
                 height: 40.h,
